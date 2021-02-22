@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Executive Hardwood AZ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="col-12 header">
+        <div class="col-4 headleft">
+                <ul>
+                  <li class="testDrop">
+                    <div class="dropdown">
+                      <button id="myBtn" class="dropbtn">&#9776;</button>
+                      <div id="myDropdown" class="dropdown-content">
+                        <h1><a href="index.html">HOME</a></h1>
+                        <hr>
+                        <h1><a href="install.html">INSTALL</a></h1>
+                        <hr>
+                        <h1><a href="repair.html">REPAIR</a></h1>
+                        <hr>
+                        <h1><a href="cleaning.html">CLEANING</a></h1>
+                        <hr>
+                        <h1><a href="sandFinish.html">SAND AND FINISH</a></h1>
+                        <hr>
+                        <h1><a href="customWork.html">CUSTOM WORK</a></h1>
+                        <!--<hr>
+                        <h1><a href="testimonials.html">TESTIMONIALS</a></h1>
+                        <hr>-->
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+        </div>
+        <div class="col-4 headMid">
+
+        </div>
+        <div class="col-4 headRight">
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="col-12 infoContent">
+        <div class="contentBanner installBanner">
+
+        </div>
+        <div class="contentText">
+            <br>
+            <br>
+            <h1>Install</h1>
+            <br>
+            <h2>In today’s industry there’s a variety of wood floors that people choose to have installed into their private and commercial places. Some of the ones that we highly recommend are the following:</h2>
+            <br>
+            <ul style="list-style-type: circle; font-weight: bold; margin: 0vw 5vw;">
+              <li>Engineered: “...looks very much like solid hardwood, but its construction features a relatively thin layer of hardwood bonded over a premium-quality plywood layer that gives the flooring very good stability. A good-quality engineered wood floor typically lasts 25 to 30 years, and it is both less expensive and easier for DIYers to install” ¹ </li>
+                <br>
+              <li>Vinyl: “Vinyl flooring is a 100-percent synthetic material. In standard sheet vinyl and vinyl tiles, the base layer is usually fiberglass which is then coated in PVC vinyl and a plasticizer. The resulting sheet is printed and embossed with a surface print layer. Over this, multiple wear layers are applied, along with a layer of no-wax polyurethane. With vinyl plank flooring, the core layer is a thicker, multi-layer PVC vinyl. Luxury vinyl flooring comes in planks or tiles that interlock side-to-side to form a floating floor. The overall thickness for vinyl flooring ranges from 1.5 mm for sheet vinyl to 5 mm for luxury vinyl planks.” ²</li>
+                <br>
+              <li>Laminate: “Laminate flooring is similar to luxury vinyl planks in its look and method of installation. The critical difference is that its core is made from wood byproducts bonded with resins. The top surface is a hard, transparent plastic wear layer that covers the printed design layer. The overall thickness for laminate flooring planks ranges from 6 mm to 12 mm” ²</li>
+                <br>
+              <li>Solid: “...comes in long planks, usually made of a hardwood species. It is milled with tongues and grooves on opposite edges so that the boards interlock when installed. It is always nailed down to the subfloor, a process that requires some skill. Because it is solid wood, this flooring can be sanded down and refinished several times over its life” ¹</li>
+                <br>
+            </ul>
+            <br>
+            <h2>We know that getting the right material for you is one of the most crucial steps you’ll take in this process of getting your perfect floors, so we have a variety of floor materials that you can choose from to get exactly what you are looking for. Plus with our 15 years of experience we can help you pick out exactly what you are looking for.</h2>
+        </div>
+        <div>
+          <br>
+          <h2>Sources:</h2>
+          <ol style=" margin: 0vw 5vw;">
+            <li>https://www.thespruce.com/engineered-hardwood-vs-solid-flooring-1821677</li>
+            <li>https://www.thespruce.com/vinyl-vs-laminate-flooring-1822800</li>
+          </ol>
+        </div>
+        <div class="contact">
+            <br>  
+            <hr>
+            <br>
+            <h2>Call now for a free quote!</h2>
+            <br>
+            <h2>951-321-9303</h2>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <div class="col-12 footer">
+        <h1>Property of Executive Hardwood LLC</h1>
+    </div>
+</body>
+
+<script>
+    // Get the button, and when the user clicks on it, execute myFunction
+    document.getElementById("myBtn").onclick = function() {myFunction()};
+  
+  /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+  
+    //https://www.w3schools.com/howto/howto_js_dropdown.asp
+    //https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onclick_dropdown
+    window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+
+</html>

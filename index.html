@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Executive Hardwood AZ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="col-12 header">
+        <div class="col-4 headleft">
+                <ul>
+                  <li class="testDrop">
+                    <div class="dropdown">
+                      <button id="myBtn" class="dropbtn">&#9776;</button>
+                      <div id="myDropdown" class="dropdown-content">
+                        <h1><a href="index.html">HOME</a></h1>
+                        <hr>
+                        <h1><a href="install.html">INSTALL</a></h1>
+                        <hr>
+                        <h1><a href="repair.html">REPAIR</a></h1>
+                        <hr>
+                        <h1><a href="cleaning.html">CLEANING</a></h1>
+                        <hr>
+                        <h1><a href="sandFinish.html">SAND AND FINISH</a></h1>
+                        <hr>
+                        <h1><a href="customWork.html">CUSTOM WORK</a></h1>
+                        <!--<hr>
+                        <h1><a href="testimonials.html">TESTIMONIALS</a></h1>
+                        <hr>-->
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+        </div>
+        <div class="col-4 headMid">
+
+        </div>
+        <div class="col-4 headRight">
+
+        </div>
+    </div>
+
+    <div class="col-12 content">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>Executive Hardwood</h1>
+        <div>
+            <a href="repair.html">Repairs</a>
+            <span>&#8226;</span>
+            <a href="install.html">Install</a>
+            <span>&#8226;</span>
+            <a href="cleaning.html">Cleaning</a>
+        </div>
+        <div>
+            <a href="sandFinish.html">Sand and Finish</a>
+            <span>&#8226;</span>
+            <a href="customWork.html">Custom Work</a>
+            <!--<span>&#8226;</span>
+            <a href="testimonials.html">Testimonials</a>-->
+        </div>
+        <div class="contact">
+          <br>  
+          <br>
+          <br>
+          <h2>Contact Us!</h2>
+          <br>
+          <h2>951-321-9303</h2>
+          <br>
+          <br>
+          <br>
+        </div>
+    </div>
+
+    <div class="col-12 footer">
+        <h1>Property of Executive Hardwood LLC</h1>
+    </div>
+</body>
+
+<script>
+    // Get the button, and when the user clicks on it, execute myFunction
+    document.getElementById("myBtn").onclick = function() {myFunction()};
+  
+  /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+  
+    //https://www.w3schools.com/howto/howto_js_dropdown.asp
+    //https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onclick_dropdown
+    window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+
+</html>

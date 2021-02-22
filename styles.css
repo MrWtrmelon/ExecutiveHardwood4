@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    /*list-style-type: none;*/
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    /*border: 1px red solid;*/
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.col-42 {width: 350%;}
+
+html {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.header {
+    background-color: black;
+    height: 5vh;
+    padding: 0px;
+    position: fixed;
+}
+
+.headMid {
+    background-image: url(images/ExecutiveHardwoodLogo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 5vh;
+}
+
+.footer {
+    background-color: black;
+    height: 5vh;
+    text-align: center;
+    font-size: 0.7vh;
+    color: rgb(56, 56, 56);
+    position: fixed;
+    bottom: 0px;
+}
+
+.content {
+    height: 100vh;
+    background-image: url(images/Repairs.JPEG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.content h1 {
+    font-size: 7vh;
+}
+
+.content a {
+    font-size: 4vh;
+    color: white;
+}
+
+.content span {
+    font-size: 4vh;
+}
+
+.infoContent {
+    height: 90vh;
+}
+
+.infoContent h1 {
+    font-size: 5vh;
+}
+
+.infoContent h2 {
+    font-size: 2vh;
+}
+
+.contentBanner {
+    height: 30vh;
+    /*background-image: url(images/Repairs.JPEG);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.contentText {
+    margin: 0vw 5vw;
+}
+
+.contact {
+    text-align: center;
+    font-size: 2vh;
+    /*transform: translateY(33vh);*/
+    z-index:0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    overflow: auto;
+    transform: translate(-15px, -6px);
+    height: 90vh;
+    width: 45vw;
+    font-size: 1.5vh;
+    z-index: 10;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 5px 25px 10px black;
+  }
+  
+  .dropdown-content a {
+    padding: 10px 10px;
+    margin: 0px 20px;
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+  }
+  
+  .dropbtn {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: white;
+    padding: 1px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3vh;
+    transform: translateY(-13px);
+  }
+  
+  .show {display:block;}
+
+  .cleaningBanner {background-image: url(images/cleaningBannerDesktop.png);}
+  .customWorkBanner {background-image: url(images/CustomWorkBannerDesktop.png);}
+  .installBanner {background-image: url(images/InstallBannerDesktop.png);}
+  .repairBanner {background-image: url(images/repairsBannerDesktop.png);}
+  .sandFinishBanner {background-image: url(images/sandFinishBannerDesktop.png);}
+  .testimonialsBanner {background-image: url(images/);}
+
+  @media screen and (max-width: 800px){
+    .dropdown-content {
+        width: 100vw;
+        transform: translate(-15px, -11px);
+        height: 40vh;
+    }
+    .cleaningBanner {background-image: url(images/cleaningBanner.png);}
+    .customWorkBanner {background-image: url(images/CustomWorkBanner.png);}
+    .installBanner {background-image: url(images/InstallBanner.png);}
+    .repairBanner {background-image: url(images/repairsBanner.png);}
+    .sandFinishBanner {background-image: url(images/SandBanner.png);}
+    .testimonialsBanner {background-image: url(images/);}
+  }
